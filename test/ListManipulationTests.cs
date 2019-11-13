@@ -24,7 +24,11 @@ namespace LambdaExamplesTests
             list.ShouldNotBeEmpty();
             list.Count(x => x.Brand == "Nike" && x.Category == "Running").ShouldBe(0);
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> c44c9ce19d8f61cadfe396f67fd9659edb7a7fd2
         [Fact]
         public void RemoveBrandNotListTest()
         {
@@ -34,6 +38,7 @@ namespace LambdaExamplesTests
             list.Count(x => x.Brand == "Nike" && x.Category == "Running").ShouldNotBe(0);
         }
 
+<<<<<<< HEAD
         [Theory]
         [InlineData(1)]
         [InlineData(5)]
@@ -45,5 +50,7 @@ namespace LambdaExamplesTests
             list.Count.ShouldBe(n);
         }
 
+=======
+>>>>>>> c44c9ce19d8f61cadfe396f67fd9659edb7a7fd2
     }
 }
