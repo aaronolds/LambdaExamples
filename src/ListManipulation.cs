@@ -34,6 +34,7 @@ namespace LambdaExamples
             theList.RemoveAll(x => !removeMe.Any(y => y.Brand == x.Brand && y.Category == x.Category));
             return theList;
         }
+
         public List<Shoe> GetTopNShoes(int n)
         {
             var theList = SharedKernel.ShoeList();
